@@ -1,0 +1,522 @@
+@font-face {
+    font-family: 'Fira Code';
+    src: url('../fonts/FiraCode-Regular.ttf') format('truetype');
+    
+}
+
+::-webkit-scrollbar {
+    background: #010C15;
+    width: 0.8em;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(229, 233, 240, 0.7);
+    border-radius: 15px;
+}
+
+.body-1, .body-2 {
+
+    color: #607b96;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 99vh;
+    margin: 0;
+
+    border: 0.05em solid #1E2D3D;
+    border-radius: 3px;
+
+    font-size: 11px;
+    font-family: 'Fira Code', serif;
+
+}
+
+.body-1 {
+    background-image: 
+        url(../images/Background.png),
+        url(../images/Background_Blurs.png);
+    background-blend-mode: overlay;
+    background-repeat: no-repeat, no-repeat;
+    background-position: 0 0, 55em 5em;
+    background-size: cover, 40em 40em;
+}
+
+.body-2 {
+    background: url(../images/Background.png) no-repeat;
+    background-size: cover;
+}
+
+header, footer {
+    display: flex;
+    flex-direction: row;
+    min-height: 2.5em;
+}
+
+header div, footer div {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    border: 0.05em solid #1E2D3D;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
+}
+
+.flex-3 {
+    flex: 3;
+}
+
+.flex-5 {
+    flex: 5;
+}
+
+.flex-6 {
+    flex: 6;
+}
+
+.flex-8 {
+    flex: 8;
+}
+
+.flex-11-67 {
+    flex: 11.67;
+}
+
+.flex-16 {
+    flex: 16;
+}
+
+.flex-18 {
+    flex: 18;
+}
+
+.flex-20 {
+    flex: 20;
+}
+
+.flex-30 {
+    flex: 30;
+}
+
+.flex-37-4 {
+    flex: 37.4;
+}
+
+.flex-38-5 {
+    flex: 38.5;
+}
+
+.flex-38-6 {
+    flex: 38.6;
+}
+
+.flex-50 {
+    flex: 50;
+}
+
+.content-1 {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.content-left {
+    flex: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.content-left-text-1 {
+    flex: 3;
+    font-size: 15px;
+    color: #E5E9F0;
+}
+
+.content-left-text-2 {
+    flex: 3;
+    font-size: 40px;
+    color: #E5E9F0;
+}
+
+.content-left-text-3 {
+    flex: 3;
+    font-size: 20px;
+    color: #4D5BCE;
+}
+
+.content-left-text-4 {
+    flex: 3;
+    font-size: 10px;
+    color: #607B96;
+}
+
+.content-left-text-5 {
+    flex: 3;
+    font-size: 11px;
+}
+
+.blue {
+    color: #4D5BCE;
+}
+
+.green {
+    color: #43D9AD;
+}
+
+.white {
+    color: #fff;
+}
+
+.red {
+    color: #E99287;
+}
+
+.purple {
+    color: #C98BDF;
+}
+
+.content-right {
+    flex: 10;
+}
+
+.image {
+    width: 30em;
+    height: auto;
+    opacity: 0.9;
+    border-radius: 20px;
+}
+
+.hello, .about, .projects, .contact, .personal-info-body1 div, .project-body1 div, #linkedin, #github  {
+    cursor: pointer;
+}
+
+.content-2 {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content-2 div {
+    width: 99.9%;
+}
+
+.about-header, .about-body, .projects-header, .projects-body {
+    display: flex;
+    flex-direction: row;
+    border: 0.05em solid #1E2D3D;
+}
+
+.about-header div, .about-body > div, .projects-header div, .projects-body > div {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    border: 0.05em solid #1E2D3D;
+}
+
+.scrollable {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.personal-info-body1,  .project-body1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 1.5em;
+}
+
+.personal-info-body1 div, .project-body1 div {
+    border: 0;
+    padding: 0.6em;
+}
+
+.personal-info-body2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.personal-info-body2 div {
+    border: 0;
+}
+
+.numbers, .sentences {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 80vh;
+}
+
+.numbers div, .sentences > div {
+    padding: 0.4em;
+}
+
+.personal-info-body3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-height: 87vh;
+}
+
+.personal-info-body3 > div {
+    border: 0;
+}
+
+.snippet {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border-top: 0.05em solid #1E2D3D;
+    margin-top: 2em;
+}
+
+.snippet-comment {
+    padding: 1.5em;
+    
+}
+
+.snippet-header {
+    display: flex;
+    flex-direction: row;
+    border: 0;
+}
+
+.icon {
+    font-size: 3em;
+}
+
+.snippet-username {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border: 0;
+    margin-left: 1em;
+}
+
+.snippet-body {
+    max-width: 42.5em;
+    background: #011001;
+    border: 0.2em solid #1E2D3D;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 1em;
+}
+
+.separator {
+    margin-top: 3em;
+    background-color: #E5E9F0;
+    width: 40em;
+}
+
+.whole-code {
+    border: 0.08em solid #1E2D3D;
+    max-width: 7em;
+    text-align: center;
+    padding: 0.7em;
+    border-radius: 15px;
+}
+
+.language-icon {
+    font-size: 1.8em;
+}
+
+.custom-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+.checkmark {
+    position: absolute;
+    margin-top: 0.5em;
+    height: 12px;
+    width: 12px;
+    background-color: transparent;
+    border: 0.15em solid #1E2D3D;
+}
+
+.custom-checkbox:hover input ~ .checkmark{
+    background-color: #1E2D3D;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkmark {
+    background-color: #1E2D3D;
+}
+
+.custom-checkbox .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkmark:after {
+    display: block;
+}
+
+.custom-checkbox .checkmark:after {
+    width: 3px;
+    height: 7px;
+    bottom: 3px;
+    left: 3px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+.projects-body2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border: 0.08em solid #1E2D3D;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.project {
+    border: 0.08em solid #1E2D3D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 30em;
+    margin: 2em;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    transition: box-shadow 0.5s ease, transform 0.5s ease;
+    border-radius: 15px;
+    background-color: #1E2D3D;
+}
+
+.project-body {
+    margin-top: 1em;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.project-header {
+    padding: 1em;
+    padding-left: 3em;
+}
+
+.project:hover {
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+}
+
+.project-body-img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 16em;
+    background: url("../images/project1.png");
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+}
+
+.project-body-body {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-body-body-text {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-body-body-button {
+    margin-top: 0.8em;
+    padding: 0.5em;
+    text-align: center;
+    max-width: 10em;
+    border-radius: 15px;
+    background-color: #010C15;
+    cursor: pointer;
+}
+
+.contact-info-body2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-info-body2 > div, .contact-info-body2 > button {
+    margin: 1em;
+}
+
+.name, .email, .message {
+    text-align: left;
+    padding-left: 50%;
+}
+
+.contact-input {
+    background-color: #011001;
+    border: 0.1em solid #1E2D3D;
+    border-radius: 5px;
+    margin-top: 0.6em;
+    height: 2em;
+    color: #607b96;
+    font-size: 11px;
+    padding: 0.5em;
+}
+
+.textarea {
+    height: 8em;
+    width: 20em;
+}
+
+.submitBtn {
+    background-color: #1C2B3A;
+    border: 0.1em solid #1E2D3D;
+    color: #fff;
+    font-size: 11px;
+    border-radius: 5px;
+    padding: 0.5em;
+}
+
+.contact-info-body3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.submit-code {
+    background-color: #011001;
+    border: 0.1em solid #1E2D3D;
+    max-width: 70vh;
+    min-height: 70vh;
+    border-radius: 15px;
+    padding: 1em;
+}
+
+.nameSubmit, .emailSubmit, .messageSubmit {
+    white-space: pre-line;
+}

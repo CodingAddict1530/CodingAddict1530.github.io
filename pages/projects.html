@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Meta Data -->
+    <head>
+        <title>Portfolio</title>
+		<meta charset="UTF-8">
+        <meta name="description" content="My Portfolio">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="HTML, CSS, JavaScript, Portfolio">
+        <meta name="author" content="Alexis Mugisha">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <link rel="stylesheet" type="text/css" href="../fontawesome/css/all.min.css">
+    </head>
+
+    <!-- Body -->
+    <body class="body-2">
+
+        <!-- Top Horizontal Bar -->
+        <header>
+            <div class="flex-18">
+                alexis-mugisha
+            </div>
+            <div id="hello" class="flex-5 hello" onclick="helloPage()">
+                _hello
+            </div>
+            <div id="about" class="flex-6 about" onclick="aboutPage()">
+                _about-me
+            </div>
+            <div id="projects" class="flex-5 projects" onclick="projectsPage()">
+                _projects
+            </div>
+            <div class="flex-50">
+
+            </div>
+            <div id="contact" class="flex-6 contact" onclick="contactPage()">
+                _contact-me
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <div id="content-2" class="content-2">
+
+            <!-- Main Content Header -->
+            <div class="flex-2 projects-header">
+                <div class="flex-18">
+                    projects
+                </div>
+                <div class="flex-16">
+                    projects; java
+                </div>
+                <div class="flex-20">
+                    
+                </div>
+                <div class="flex-38-5">
+                    
+                </div>
+            </div>
+
+            <!-- Main Content Body -->
+            <div class="flex-50 projects-body">
+
+                <!-- Main Content Body Column 1 -->
+                <div class="flex-11-67 project-body1">
+                    <div class="checkbox-container">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" value="java" onchange="filterItems()">
+                            <span class="checkmark"></span>&nbsp;&nbsp;&nbsp;
+                            <i class="fab fa-java red language-icon"></i>&nbsp;<strong>Java</strong>
+                        </label>
+                    </div>
+                    <div class="checkbox-container">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" value="python" onchange="filterItems()">
+                            <span class="checkmark"></span>&nbsp;&nbsp;&nbsp;
+                            <i class="fab fa-python blue language-icon"></i>&nbsp;<strong>Python</strong>
+                        </label>
+                    </div>
+                    <div class="checkbox-container">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" value="js" onchange="filterItems()">
+                            <span class="checkmark"></span>&nbsp;&nbsp;&nbsp;
+                            <i class="fab fa-js green language-icon"></i>&nbsp;<strong>JavaScript</strong>
+                        </label>
+                    </div>
+                    <div class="checkbox-container">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" value="html" onchange="filterItems()">
+                            <span class="checkmark"></span>&nbsp;&nbsp;&nbsp;
+                            <i class="fab fa-html5 white language-icon"></i>&nbsp;<strong>HTML</strong>
+                        </label>
+                    </div>
+                    <div class="checkbox-container">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" value="css" onchange="filterItems()">
+                            <span class="checkmark"></span>&nbsp;&nbsp;&nbsp;
+                            <i class="fab fa-css3-alt white language-icon"></i>&nbsp;<strong>CSS</strong>
+                        </label>
+                    </div>
+                    <div class="checkbox-container">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" value="javafx" onchange="filterItems()">
+                            <span class="checkmark"></span>&nbsp;&nbsp;&nbsp;
+                            <i class="fab fa-java red language-icon"></i>&nbsp;<strong>JavaFX</strong>
+                        </label>
+                    </div>
+                    <div class="checkbox-container">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" value="junit" onchange="filterItems()">
+                            <span class="checkmark"></span>&nbsp;&nbsp;&nbsp;
+                            <i class="fab fa-java red language-icon"></i>&nbsp;<strong>JUnit</strong>
+                        </label>
+                    </div>
+                    <div class="checkbox-container">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" value="django" onchange="filterItems()">
+                            <span class="checkmark"></span>&nbsp;&nbsp;&nbsp;
+                            <i class="fab fa-python blue language-icon"></i>&nbsp;<strong>Django</strong>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Main Content Body Column 2 -->
+                <div class="flex-50 scrollable projects-body2">
+                    <div class="project flex-1 java javafx">
+                        <div class="project-header">
+                            <span class="blue">Project 1</span> // _library-system
+                        </div>
+                        <div class="project-body">
+                            <div class="project-body-img">
+                            </div>
+                            <div class="project-body-body">
+                                <div class="project-body-body-text">
+                                    Library Management System&nbsp;&nbsp;
+                                    <i class="fab fa-java red language-icon"></i>&nbsp;
+                                    <i class="fab fa-java red language-icon"></i>
+                                </div>
+                                <div class="project-body-body-button">
+                                    view-project
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project flex-1 python django">
+                        <div class="project-header">
+                            <span class="blue">Project 1</span> // _library-system
+                        </div>
+                        <div class="project-body">
+                            <div class="project-body-img">
+                            </div>
+                            <div class="project-body-body">
+                                <div class="project-body-body-text">
+                                    Library Management System&nbsp;&nbsp;
+                                    <i class="fab fa-python blue language-icon"></i>&nbsp;
+                                    <i class="fab fa-python blue language-icon"></i>
+                                </div>
+                                <div class="project-body-body-button">
+                                    view-project
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project flex-1 html css js">
+                        <div class="project-header">
+                            <span class="blue">Project 1</span> // _library-system
+                        </div>
+                        <div class="project-body">
+                            <div class="project-body-img">
+                            </div>
+                            <div class="project-body-body">
+                                <div class="project-body-body-text">
+                                    Library Management System&nbsp;&nbsp;
+                                    <i class="fab fa-html5 white language-icon"></i>&nbsp;
+                                    <i class="fab fa-css3-alt white language-icon"></i>&nbsp;
+                                    <i class="fab fa-js green language-icon"></i>
+                                </div>
+                                <div class="project-body-body-button">
+                                    view-project
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project flex-1 python">
+                        <div class="project-header">
+                            <span class="blue">Project 1</span> // _library-system
+                        </div>
+                        <div class="project-body">
+                            <div class="project-body-img">
+                            </div>
+                            <div class="project-body-body">
+                                <div class="project-body-body-text">
+                                    Library Management System&nbsp;&nbsp;
+                                    <i class="fab fa-python blue language-icon"></i>
+                                </div>
+                                <div class="project-body-body-button">
+                                    view-project
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project flex-1 java">
+                        <div class="project-header">
+                            <span class="blue">Project 1</span> // _library-system
+                        </div>
+                        <div class="project-body">
+                            <div class="project-body-img">
+                            </div>
+                            <div class="project-body-body">
+                                <div class="project-body-body-text">
+                                    Library Management System&nbsp;&nbsp;
+                                    <i class="fab fa-java red language-icon"></i>
+                                </div>
+                                <div class="project-body-body-button">
+                                    view-project
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project flex-1 html css">
+                        <div class="project-header">
+                            <span class="blue">Project 1</span> // _library-system
+                        </div>
+                        <div class="project-body">
+                            <div class="project-body-img">
+                            </div>
+                            <div class="project-body-body">
+                                <div class="project-body-body-text">
+                                    Library Management System&nbsp;&nbsp;
+                                    <i class="fab fa-html5 white language-icon"></i>&nbsp;
+                                    <i class="fab fa-css3-alt white language-icon"></i>
+                                </div>
+                                <div class="project-body-body-button">
+                                    view-project
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project flex-1 java">
+                        <div class="project-header">
+                            <span class="blue">Project 1</span> // _library-system
+                        </div>
+                        <div class="project-body">
+                            <div class="project-body-img">
+                            </div>
+                            <div class="project-body-body">
+                                <div class="project-body-body-text">
+                                    Library Management System&nbsp;&nbsp;
+                                    <i class="fab fa-java red language-icon"></i>
+                                </div>
+                                <div class="project-body-body-button">
+                                    view-project
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project flex-1 java">
+                        <div class="project-header">
+                            <span class="blue">Project 1</span> // _library-system
+                        </div>
+                        <div class="project-body">
+                            <div class="project-body-img">
+                            </div>
+                            <div class="project-body-body">
+                                <div class="project-body-body-text">
+                                    Library Management System&nbsp;&nbsp;
+                                    <i class="fab fa-java red language-icon"></i>
+                                </div>
+                                <div class="project-body-body-button">
+                                    view-project
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project flex-1 python django">
+                        <div class="project-header">
+                            <span class="blue">Project 1</span> // _library-system
+                        </div>
+                        <div class="project-body">
+                            <div class="project-body-img">
+                            </div>
+                            <div class="project-body-body">
+                                <div class="project-body-body-text">
+                                    Library Management System&nbsp;&nbsp;
+                                    <i class="fab fa-python blue language-icon"></i>&nbsp;
+                                    <i class="fab fa-python blue language-icon"></i>
+                                </div>
+                                <div class="project-body-body-button">
+                                    view-project
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project flex-1 java javafx">
+                        <div class="project-header">
+                            <span class="blue">Project 1</span> // _library-system
+                        </div>
+                        <div class="project-body">
+                            <div class="project-body-img">
+                            </div>
+                            <div class="project-body-body">
+                                <div class="project-body-body-text">
+                                    Library Management System&nbsp;&nbsp;
+                                    <i class="fab fa-java red language-icon"></i>&nbsp;
+                                    <i class="fab fa-java red language-icon"></i>
+                                </div>
+                                <div class="project-body-body-button">
+                                    view-project
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Horizontal Bar -->
+        <footer>
+            <div class="flex-5">
+                find me on:
+            </div>
+            <div id="linkedin" class="flex-1">
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+            <div class="flex-1">
+                <i class="fas fa-envelope"></i>
+            </div>
+            <div class="flex-50">
+
+            </div>
+            <div id="github" class="flex-8">
+                @CodingAddict1530&nbsp;<i class="fab fa-github"></i>
+            </div>
+        </footer>
+    </body>
+
+    <!-- JavaScript -->
+    <script src="../js/script.js"></script>
+</html>

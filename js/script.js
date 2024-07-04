@@ -1,0 +1,473 @@
+
+// Define data to be displayed in Bio section.
+const bioData = `
+<div class="flex-1 numbers">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+</div>
+<div class="flex-18 sentences">
+    <div>/**</div>
+    <div> * <strong>About me:</strong></div>
+    <div> * </div>'
+    <div> * I am an enthusiastic programmer and have been writing</div>
+    <div> * &nbsp;code since 2020.</div>
+    <div> * I excel in writing desktop and mobile applications,</div>
+    <div> * &nbsp;as well as web apps</div>
+    <div> * Outside programming I play soccer,</div>
+    <div> * &nbsp;hangout with friends or travel around.</div>
+    <div> */</div>
+</div>
+`;
+
+// Define data to be displayed in Work Experience section.
+const workExpData = `
+<div class="flex-1 numbers">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+    <div>11</div>
+    <div>12</div>
+    <div>13</div>
+    <div>14</div>
+    <div>15</div>
+    <div>16</div>
+    <div>17</div>
+    <div>18</div>
+    <div>19</div>
+    <div>20</div>
+    <div>21</div>
+</div>
+<div class="flex-18 sentences">
+    <div>/**</div>
+    <div> * <strong>Work Experience:</strong></div>
+    <div> * </div>'
+    <div> * <strong>Tutor at Algonquin College, Ottawa ON:</strong></div>
+    <div> * <strong>May 2024 - Present</strong></div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;Tutored first-year students, improving their understanding of</div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Java programming, Database systems and Computer Essentials.</div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;Demonstrated strong communication skills by explaining</div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;complex theories to various students in 1 – 2 hour sessions.</div>
+    <div> * <strong> General Laborer at ARX Fencing & Logistics, Ottawa ON:</strong></div>
+    <div> * <strong>May 2024 - Present</strong></div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;Developed teamwork skills by effectively working in team</div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to perform required tasks.</div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;Provided excellent customer service when interacting with</div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;customers.</div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;Demonstrated physical strength by accomplishing tasks</div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;requiring lifting and standing for long periods of time.</div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;Demonstrated perseverance by being able to do the same</div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;task for multiple hours, I guarded a parking lot</div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for 6 straight hours.</div>
+    <div> */</div>
+</div>
+`;
+
+// Define data to be displayed in Skills section.
+const skillsData = `
+<div class="flex-1 numbers">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+    <div>11</div>
+    <div>12</div>
+    <div>13</div>
+    <div>14</div>
+    <div>15</div>
+    <div>16</div>
+    <div>17</div>
+    <div>18</div>
+    <div>19</div>
+    <div>20</div>
+    <div>21</div>
+    <div>22</div>
+    <div>23</div>
+    <div>24</div>
+    <div>25</div>
+    <div>26</div>
+    <div>27</div>
+    <div>28</div>
+    <div>29</div>
+    <div>30</div>
+    <div>31</div>
+    <div>32</div>
+    <div>33</div>
+    <div>34</div>
+    <div>35</div>
+    <div>36</div>
+    <div>37</div>
+    <div>38</div>
+    <div>39</div>
+    <div>40</div>
+    <div>41</div>
+    <div>42</div>
+    <div>43</div>
+    <div>44</div>
+</div>
+<div class="flex-18 sentences">
+    <div>/**</div>
+    <div> * <strong>Technical Skills:</strong></div>
+    <div> * </div>
+    <div> * <strong>Programming languages:</strong></div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;Java (Expert), Python (Expert), JavaScript (Intermediate),</div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PHP (Novice), Dart (Novice), SQL (Expert).</div>
+    <div> * <strong>Markup languages:</strong></div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;HTML (Expert), CSS (Expert).</div>
+    <div> * <strong>Operating Systems:</strong></div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;Windows (11, 10, 7), Linux (Ubuntu, Kali Linux),</div>
+    <div> * <strong>Database Management Systems:</strong></div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;MySQL, PostgreSQL, Oracle DB, Microsoft SQL Server, SQLite,</div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MS Access.</div>
+    <div> * <strong>Frameworks:</strong></div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;JUnit, JavaFX, Django, Flask</div>
+    <div> * <strong>Software Tools:</strong></div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;Intellij Idea, Eclipse, Pycharm, Visual Studio Code,</div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MySQL Workbench, SQL Server Management Studio,</div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VMWare Workstation, Oracle SQL Developer, XAMPP,</div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pgAdmin 4, Umlet, Microsoft Office (Word, Excel,</div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Powerpoint, Access, Outlook).</div>
+    <div> * </div>
+    <div> * <strong>Soft Skills:</strong></div>
+    <div> * </div>
+    <div> * <strong>Leadership:</strong></div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;Proved leadership skills by leading a group projects during a</div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;technical writing course.</div>
+    <div> * <strong>Communication:</strong></div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;Ability to effectively communicate with team members and</div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;supervisors in a professional setting.</div>
+    <div> * <strong>Teamwork:</strong></div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;Excel in team working environments proven by a good number</div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;of months working with team members in previous</div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and current jobs</div>
+    <div> * <strong>Time Management:</strong></div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;Good time management skills and strategies to finish tasks</div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;within deadlines.</div>
+    <div> * <strong>Adaptation:</strong></div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;Adapting to changing environments as I cope well with new</div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;working environments.</div>
+    <div> * <strong>Languages:</strong></div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;English (Fluent)</div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;French (Fluent)</div>
+    <div> */</div>
+</div>
+`;
+
+// Define data to be displayed in Education section.
+const educationData = `
+<div class="flex-1 numbers">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+    <div>11</div>
+    <div>12</div>
+    <div>13</div>
+    <div>14</div>
+    <div>15</div>
+    <div>16</div>
+    <div>17</div>
+    <div>18</div>
+    <div>19</div>
+    <div>20</div>
+    <div>21</div>
+</div>
+<div class="flex-18 sentences">
+    <div>/**</div>
+    <div> * <strong>Education:</strong></div>
+    <div> * </div>
+    <div> * <strong>Course:</strong></div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;Computer Programming and Analysis</div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;January 2024 - Present</div>
+    <div> * <strong>Institution:</strong></div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;Algonquin College, Ottawa ON</div>
+    <div> * <strong>GPA:</strong></div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;3.95/4.00 (Dean's Honours List)</div>
+    <div> * <strong>Degree:</strong></div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;Computer Programming and Analysis Advanced Diploma</div>
+    <div> * <strong>Coursework:</strong></div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;Object Oriented Programming (Java)</div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;Database Systems (SQL, Oracle, MySQL, PostgreSQL</div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;, Microsoft SQL Server, MS Access).</div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;Linux</div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;Web Development (JavaScript, HTML5, CSS, PHP).</div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;Technical writing.</div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;Computer Essentials</div>
+    <div> */</div>
+</div>
+`;
+
+// Add an event listener for when the document has fully loaded.
+document.addEventListener("DOMContentLoaded", function1);
+
+// Get the LinkedIn and GitHub divs and add event listeners for when they get clicked.
+let linkedinBtn = document.getElementById("linkedin");
+linkedinBtn.addEventListener("click", linkedin);
+let githubBtn = document.getElementById("github");
+githubBtn.addEventListener("click", github);
+
+/**
+ * Adds a specific style to the provided HTMLElement.
+ *
+ * @param item the HTMLElement to be styled.
+ */
+function addStyle(item) {
+    item.style.fontWeight = "bold";
+    item.style.borderBottom = "0.3em solid #FEA55F";
+}
+
+/**
+ * Removes a specific style to the provided HTMLElement.
+ *
+ * @param item the HTMLElement to be styled.
+ */
+function removeStyle(item) {
+    item.style.fontWeight = "normal";
+    item.style.borderBottom = "0.08em solid #1E2D3D";
+}
+
+/**
+ * Opens LinkedIn profile in a new tab.
+ */
+function linkedin() {
+    window.open("https://www.linkedin.com/in/alexis-mugisha", "_blank");
+}
+
+/**
+ * Opens GitHub profile in a new tab.
+ */
+function github() {
+    window.open("https://github.com/CodingAddict1530", "_blank");
+}
+
+/**
+ * Carries out multiple actions once the Document has fully loaded.
+ */
+function function1() {
+
+    // Get the path of the current document.
+    let path = window.location.pathname;
+
+    // Get the HTMLElements needed.
+    let hello = document.getElementById("hello");
+    let about = document.getElementById("about");
+    let projects = document.getElementById("projects");
+    let contact = document.getElementById("contact");
+
+    // Check if the current document is index.html.
+    if (path.includes("index.html")) {
+
+        // Style hello div and remove style from the rest.
+        addStyle(hello);
+        removeStyle(about)
+        removeStyle(projects);
+        removeStyle(contact);
+    } else if (path.includes("about.html")) { // Check if the current document is about.html.
+
+        // Style about div and remove style from the rest.
+        addStyle(about);
+        removeStyle(hello)
+        removeStyle(projects);
+        removeStyle(contact);
+
+        // Add event listeners for when specific sections are clicked.
+        let bioBtn = document.getElementById("bio");
+        bioBtn.addEventListener("click", loadBio);
+        let workExpBtn = document.getElementById("workExp");
+        workExpBtn.addEventListener("click", loadWorkExp);
+        let skillsBtn = document.getElementById("skills");
+        skillsBtn.addEventListener("click", loadSkills);
+        let educationBtn = document.getElementById("education");
+        educationBtn.addEventListener("click", loadEducation);
+
+    } else if (path.includes("projects.html")) {
+
+        // Style projects div and remove style from the rest.
+        addStyle(projects);
+        removeStyle(about)
+        removeStyle(hello);
+        removeStyle(contact);
+    } else {
+
+        // Style contact div and remove style from the rest.
+        addStyle(contact);
+        removeStyle(about)
+        removeStyle(projects);
+        removeStyle(hello);
+
+        // Add an event listener for when the send message button is clicked.
+        let resetBtn = document.getElementById("reset");
+        resetBtn.addEventListener("click", reset);
+
+        // Get the required HTMLElements.
+        let nameInput = document.getElementById("nameInput");
+        let emailInput = document.getElementById("emailInput");
+        let messageInput = document.getElementById("messageInput");
+        let nameOutput = document.getElementById("nameSubmit");
+        let emailOutput = document.getElementById("emailSubmit");
+        let messageOutput = document.getElementById("messageSubmit");
+
+        // Add event listeners for inputs in the input fields for realtime updates.
+        nameInput.addEventListener("input", updateName);
+        emailInput.addEventListener("input", updateEmail);
+        messageInput.addEventListener("input", updateMessage);
+
+        /**
+         * Resets the values and contents of specified fields.
+         */
+        function reset() {
+
+            nameInput.value = "";
+            emailInput.value = "";
+            messageInput.value = "";
+            nameOutput.textContent = "";
+            emailOutput.textContent = "";
+            messageOutput.textContent = "";
+        }
+
+        /**
+         * Updates the name being displayed to the name input.
+         */
+        function updateName() {
+
+            nameOutput.textContent = nameInput.value;
+        }
+
+        /**
+         * Updates the email being displayed to the email input.
+         */
+        function updateEmail() {
+
+            emailOutput.textContent = emailInput.value;
+        }
+
+        /**
+         * Updates the message being displayed to the message input.
+         */
+        function updateMessage() {
+
+            messageOutput.textContent = messageInput.value;
+        }
+        
+    }
+
+}
+
+/**
+ * Loads the hello page.
+ */
+function helloPage() {
+
+    window.location.href = "../pages/index.html";
+}
+
+/**
+ * Loads the about page.
+ */
+function aboutPage() {
+
+    window.location.href = "../pages/about.html";
+}
+
+/**
+ * Loads the projects page.
+ */
+function projectsPage() {
+
+    window.location.href = "../pages/projects.html";
+}
+
+/**
+ * Loads the contact page.
+ */
+function contactPage() {
+
+    window.location.href = "../pages/contact.html";
+}
+
+/**
+ * Changes the data in the about page to display the Bio.
+ */
+function loadBio() {
+
+    document.getElementById("personal-info-body2").innerHTML = bioData;
+}
+
+/**
+ * Changes the data in the about page to display the Work Experience.
+ */
+function loadWorkExp() {
+
+    document.getElementById("personal-info-body2").innerHTML = workExpData;
+}
+
+/**
+ * Changes the data in the about page to display the Skills.
+ */
+function loadSkills() {
+
+    document.getElementById("personal-info-body2").innerHTML = skillsData;
+}
+
+/**
+ * Changes the data in the about page to display the Education.
+ */
+function loadEducation() {
+
+    document.getElementById("personal-info-body2").innerHTML = educationData;
+}
+
+/**
+ * Filters projects according to their classes and classes ticked using checkboxes.
+ */
+function filterItems() {
+
+    // Retrieve all checked checkboxes and all the projects.
+    let checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+    let items = document.querySelectorAll('.project');
+
+    // Loop through each project.
+    items.forEach(function(item) {
+
+        // Check whether there are no checked checkboxes to include all projects.
+        let show = checkboxes.length === 0;
+
+        // Loop through each checked checkbox.
+        checkboxes.forEach(function(checkbox) {
+
+            // If the project contains the class checked, it is show becomes true.
+            if (item.classList.contains(checkbox.value)) {
+                show = true;
+            }
+        });
+
+        // Display the project if show is true, otherwise don't.
+        item.style.display = show ? 'flex' : 'none';
+    });
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Meta Data -->
+    <head>
+        <title>Portfolio</title>
+		<meta charset="UTF-8">
+        <meta name="description" content="My Portfolio">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="HTML, CSS, JavaScript, Portfolio">
+        <meta name="author" content="Alexis Mugisha">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <link rel="stylesheet" type="text/css" href="../fontawesome/css/all.min.css">
+    </head>
+
+    <!-- Body -->
+    <body class="body-2" >
+
+        <!-- Top Horizontal Bar -->
+        <header>
+            <div class="flex-18">
+                alexis-mugisha
+            </div>
+            <div id="hello" class="flex-5 hello" onclick="helloPage()">
+                _hello
+            </div>
+            <div id="about" class="flex-6 about" onclick="aboutPage()">
+                _about-me
+            </div>
+            <div id="projects" class="flex-5 projects" onclick="projectsPage()">
+                _projects
+            </div>
+            <div class="flex-50">
+
+            </div>
+            <div id="contact" class="flex-6 contact" onclick="contactPage()">
+                _contact-me
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <div id="content-2" class="content-2">
+
+            <!-- Main Content Header -->
+            <div class="flex-16 about-header">
+                <div class="flex-18">
+                    contacts
+                </div>
+                <div class="flex-16">
+                    contacts
+                </div>
+                <div class="flex-20">
+                    
+                </div>
+                <div class="flex-38-5">
+                    
+                </div>
+            </div>
+
+            <!-- Main Content Body -->
+            <div class="flex-50 about-body">
+
+                <!-- Main Content Body Column 1 -->
+                <div class="flex-18 personal-info-body1">
+                    <div id="bio">
+                        <i class="fas fa-envelope red"></i>&nbsp;mugi0023@algonquinlive.com
+                    </div>
+                    <div id="workExp">
+                        <i class="fas fa-phone green"></i>&nbsp;+1 (343) 630-4295
+                    </div>
+                    <div id="skills">
+                        <i class="fab fa-github blue"></i>&nbsp;CodingAddict1530
+                    </div>
+                    <div id="education">
+                        <i class="fab fa-linkedin white"></i>&nbsp;Alexis Mugisha
+                    </div>
+                </div>
+
+                <!-- Main Content Body Column 2 -->
+                <div class="flex-37-4 scrollable contact-info-body2">
+                    <div class="name">
+                        _name:<br>
+                        <input id="nameInput" type="text" class="contact-input" placeholder="John Doe">
+                    </div>
+                    <div class="email">
+                        _email:<br>
+                        <input id="emailInput" type="text" class="contact-input" placeholder="jodoe@gmail.com">
+                    </div>
+                    <div class="message">
+                        _message:<br>
+                        <textarea id="messageInput" class="contact-input textarea" placeholder="Great Portfolio!"></textarea><br><br>
+                        <button id="reset" type="reset" class="submitBtn">submit-message</button>
+                    </div>
+                    
+                </div>
+
+                <!-- Main Content Body Column 3 -->
+                <div class="flex-38-6 scrollable contact-info-body3">
+                    <div class="submit-code">
+                        <span class="purple">const <span class="blue">button</span> = 
+                        <span class="blue">document<span class="white">.</span>querySelector</span>
+                        <span class="white">(<span class="red">'#sendBtn'</span>);</span></span><br><br>
+                        
+                        <span class="purple">const <span class="blue">message</span> = </span><span class="white">{</span><br>
+                        <span class="blue">&nbsp;&nbsp;&nbsp;&nbsp;name<span class="white"> : </span></span>
+                        <span id="nameSubmit" class="red"></span><span class="white">,</span><br>
+                        <span class="blue">&nbsp;&nbsp;&nbsp;&nbsp;email<span class="white"> : </span></span>
+                        <span id="emailSubmit" class="red"></span><span class="white">,</span><br>
+                        <span class="blue">&nbsp;&nbsp;&nbsp;&nbsp;message<span class="white"> : </span></span>
+                        <span id="messageSubmit" class="red"></span><span class="white"></span><br>
+                        <span class="white">}</span><br><br>
+                        <span class="blue">button<span class="white">.</span>addEventListener</span>
+                        <span class="white">(<span class="red">'click'</span>, () <span class="purple">=></span> {</span><br>
+                        <span class="blue">&nbsp;&nbsp;&nbsp;&nbsp;form<span class="white">.</span>send<span class="white">(</span>message<span class="white">);</span></span><br>
+                        <span>)}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Horizontal Bar -->
+        <footer>
+            <div class="flex-5">
+                find me on:
+            </div>
+            <div id="linkedin" class="flex-1">
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+            <div class="flex-1">
+                <i class="fas fa-envelope"></i>
+            </div>
+            <div class="flex-50">
+
+            </div>
+            <div id="github" class="flex-8">
+                @CodingAddict1530&nbsp;<i class="fab fa-github"></i>
+            </div>
+        </footer>
+    </body>
+
+    <!-- JavaScript -->
+    <script src="../js/script.js"></script>
+</html>
