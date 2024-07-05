@@ -150,7 +150,7 @@ header div, footer div {
 
 .content-left-text-3 {
     flex: 3;
-    font-size: 20px;
+    font-size: 18px;
     color: #4D5BCE;
 }
 
@@ -163,6 +163,12 @@ header div, footer div {
 .content-left-text-5 {
     flex: 3;
     font-size: 11px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .blue {
@@ -185,6 +191,10 @@ header div, footer div {
     color: #C98BDF;
 }
 
+.actual-red {
+    color: #FF0000;
+}
+
 .content-right {
     flex: 10;
 }
@@ -196,7 +206,7 @@ header div, footer div {
     border-radius: 20px;
 }
 
-.hello, .about, .projects, .contact, .personal-info-body1 div, .project-body1 div, #linkedin, #github  {
+.pointer  {
     cursor: pointer;
 }
 
@@ -338,6 +348,16 @@ header div, footer div {
     font-size: 1.8em;
 }
 
+.small {
+    font-size: 1.2em;
+    padding: 0.7em 0 0;
+    margin: -2px;
+}
+
+.pad {
+    padding: 0 0 0 0.5em;
+}
+
 .custom-checkbox input {
     position: absolute;
     opacity: 0;
@@ -400,7 +420,8 @@ header div, footer div {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-width: 30em;
+    min-width: 38em;
+    max-width: 38em;
     margin: 2em;
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
     transition: box-shadow 0.5s ease, transform 0.5s ease;
@@ -421,18 +442,99 @@ header div, footer div {
 
 .project:hover {
     box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
-    transform: translateY(-3px);
+    transform: scale(1.1);
 }
 
 .project-body-img {
+    background: url("../images/project1.png") no-repeat center;
+    background-size: 100% 100%;
+    width: 100%;
     margin: 0;
     padding: 0;
-    width: 100%;
-    height: 16em;
-    background: url("../images/project1.png");
-    background-size: cover;
-    background-position: center;
+    min-height: 22em;
     box-sizing: border-box;
+}
+
+.project1.slide1 {
+    background: url("../images/Project1-1.png") no-repeat center;
+    background-size: 100% 100%;
+    width: 100%;
+}
+
+.project1.slide2 {
+    background: url("../images/Project1-2.png") no-repeat center;
+    background-size: 100% 100%;
+    width: 100%;
+    display: none;
+}
+
+.project1.slide3 {
+    background: url("../images/Project1-3.png") no-repeat center;
+    background-size: 100% 100%;
+    width: 100%;
+    display: none;
+}
+
+.project1.slide4 {
+    background: url("../images/Project1-4.png") no-repeat center;
+    background-size: 100% 100%;
+    width: 100%;
+    display: none;
+}
+
+.project1.slide5 {
+    background: url("../images/Project1-5.png") no-repeat center;
+    background-size: 100% 100%;
+    width: 100%;
+    display: none;
+}
+
+.project1.slide6 {
+    background: url("../images/Project1-6.png") no-repeat center;
+    background-size: 100% 100%;
+    width: 100%;
+    display: none;
+}
+
+.project1.slide7 {
+    background: url("../images/Project1-7.png") no-repeat center;
+    background-size: 100% 100%;
+    width: 100%;
+    display: none;
+}
+
+.project1.slide8 {
+    background: url("../images/Project1-8.png") no-repeat center;
+    background-size: 100% 100%;
+    width: 100%;
+    display: none;
+}
+
+.project2.slide1 {
+    background: url("../images/Project2-1.png") no-repeat center;
+    background-size: 100% 100%;
+    width: 100%;
+}
+
+.project2.slide2 {
+    background: url("../images/Project2-2.png") no-repeat center;
+    background-size: 100% 100%;
+    width: 100%;
+    display: none;
+}
+
+.project2.slide3 {
+    background: url("../images/Project2-3.png") no-repeat center;
+    background-size: 100% 100%;
+    width: 100%;
+    display: none;
+}
+
+.project2.slide4 {
+    background: url("../images/Project2-4.png") no-repeat center;
+    background-size: 100% 100%;
+    width: 100%;
+    display: none;
 }
 
 .project-body-body {
@@ -506,6 +608,9 @@ header div, footer div {
     display: flex;
     align-items: center;
     justify-content: center;
+    white-space: normal;
+    overflow-wrap: break-word;
+    height: 87vh;
 }
 
 .submit-code {
@@ -517,6 +622,6 @@ header div, footer div {
     padding: 1em;
 }
 
-.nameSubmit, .emailSubmit, .messageSubmit {
-    white-space: pre-line;
+#nameSubmit, #emailSubmit, #messageSubmit {
+    white-space: normal;
 }

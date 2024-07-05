@@ -12,17 +12,23 @@ const bioData = `
     <div>8</div>
     <div>9</div>
     <div>10</div>
+    <div>11</div>
+    <div>12</div>
+    <div>13</div>
 </div>
 <div class="flex-18 sentences">
     <div>/**</div>
     <div> * <strong>About me:</strong></div>
-    <div> * </div>'
+    <div> * </div>
     <div> * I am an enthusiastic programmer and have been writing</div>
-    <div> * &nbsp;code since 2020.</div>
+    <div> * &nbsp;&nbsp;code since 2020.</div>
     <div> * I excel in writing desktop and mobile applications,</div>
-    <div> * &nbsp;as well as web apps</div>
+    <div> * &nbsp;&nbsp;as well as web apps.</div>
     <div> * Outside programming I play soccer,</div>
-    <div> * &nbsp;hangout with friends or travel around.</div>
+    <div> * &nbsp;&nbsp;hangout with friends or travel around.</div>
+    <div> * As a programmer, I want to create innovative, efficient and</div>
+    <div> * &nbsp;&nbsp;user-friendly applications that solve real work problems as I</div>
+    <div> * &nbsp;&nbsp;continuously learn, improve and contribute to impactful projects.</div>
     <div> */</div>
 </div>
 `;
@@ -55,8 +61,8 @@ const workExpData = `
 <div class="flex-18 sentences">
     <div>/**</div>
     <div> * <strong>Work Experience:</strong></div>
-    <div> * </div>'
-    <div> * <strong>Tutor at Algonquin College, Ottawa ON:</strong></div>
+    <div> * </div>
+    <div> * <strong>Peer Tutor at Algonquin College, Ottawa ON:</strong></div>
     <div> * <strong>May 2024 - Present</strong></div>
     <div> * &nbsp;&nbsp;&nbsp;&nbsp;Tutored first-year students, improving their understanding of</div>
     <div> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Java programming, Database systems and Computer Essentials.</div>
@@ -131,16 +137,16 @@ const skillsData = `
     <div> * </div>
     <div> * <strong>Programming languages:</strong></div>
     <div> * &nbsp;&nbsp;&nbsp;&nbsp;Java (Expert), Python (Expert), JavaScript (Intermediate),</div>
-    <div> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PHP (Novice), Dart (Novice), SQL (Expert).</div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PHP (Novice), Dart (Intermediate), SQL (Expert).</div>
     <div> * <strong>Markup languages:</strong></div>
     <div> * &nbsp;&nbsp;&nbsp;&nbsp;HTML (Expert), CSS (Expert).</div>
     <div> * <strong>Operating Systems:</strong></div>
-    <div> * &nbsp;&nbsp;&nbsp;&nbsp;Windows (11, 10, 7), Linux (Ubuntu, Kali Linux),</div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;Windows (11, 10, 7), Linux (Ubuntu, Kali Linux).</div>
     <div> * <strong>Database Management Systems:</strong></div>
     <div> * &nbsp;&nbsp;&nbsp;&nbsp;MySQL, PostgreSQL, Oracle DB, Microsoft SQL Server, SQLite,</div>
     <div> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MS Access.</div>
     <div> * <strong>Frameworks:</strong></div>
-    <div> * &nbsp;&nbsp;&nbsp;&nbsp;JUnit, JavaFX, Django, Flask</div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;JUnit, JavaFX, Django, Flask.</div>
     <div> * <strong>Software Tools:</strong></div>
     <div> * &nbsp;&nbsp;&nbsp;&nbsp;Intellij Idea, Eclipse, Pycharm, Visual Studio Code,</div>
     <div> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MySQL Workbench, SQL Server Management Studio,</div>
@@ -159,7 +165,7 @@ const skillsData = `
     <div> * <strong>Teamwork:</strong></div>
     <div> * &nbsp;&nbsp;&nbsp;&nbsp;Excel in team working environments proven by a good number</div>
     <div> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;of months working with team members in previous</div>
-    <div> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and current jobs</div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and current <jobs class=""></jobs></div>
     <div> * <strong>Time Management:</strong></div>
     <div> * &nbsp;&nbsp;&nbsp;&nbsp;Good time management skills and strategies to finish tasks</div>
     <div> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;within deadlines.</div>
@@ -167,8 +173,8 @@ const skillsData = `
     <div> * &nbsp;&nbsp;&nbsp;&nbsp;Adapting to changing environments as I cope well with new</div>
     <div> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;working environments.</div>
     <div> * <strong>Languages:</strong></div>
-    <div> * &nbsp;&nbsp;&nbsp;&nbsp;English (Fluent)</div>
-    <div> * &nbsp;&nbsp;&nbsp;&nbsp;French (Fluent)</div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;English (Fluent).</div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;French (Fluent).</div>
     <div> */</div>
 </div>
 `;
@@ -203,22 +209,22 @@ const educationData = `
     <div> * <strong>Education:</strong></div>
     <div> * </div>
     <div> * <strong>Course:</strong></div>
-    <div> * &nbsp;&nbsp;&nbsp;&nbsp;Computer Programming and Analysis</div>
-    <div> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;January 2024 - Present</div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;Computer Programming and Analysis,</div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;January 2024 - Present.</div>
     <div> * <strong>Institution:</strong></div>
-    <div> * &nbsp;&nbsp;&nbsp;&nbsp;Algonquin College, Ottawa ON</div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;Algonquin College, Ottawa ON.</div>
     <div> * <strong>GPA:</strong></div>
-    <div> * &nbsp;&nbsp;&nbsp;&nbsp;3.95/4.00 (Dean's Honours List)</div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;3.95/4.00 (Dean's Honours List).</div>
     <div> * <strong>Degree:</strong></div>
-    <div> * &nbsp;&nbsp;&nbsp;&nbsp;Computer Programming and Analysis Advanced Diploma</div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;Computer Programming and Analysis Advanced Diploma.</div>
     <div> * <strong>Coursework:</strong></div>
-    <div> * &nbsp;&nbsp;&nbsp;&nbsp;Object Oriented Programming (Java)</div>
-    <div> * &nbsp;&nbsp;&nbsp;&nbsp;Database Systems (SQL, Oracle, MySQL, PostgreSQL</div>
-    <div> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;, Microsoft SQL Server, MS Access).</div>
-    <div> * &nbsp;&nbsp;&nbsp;&nbsp;Linux</div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;Object Oriented Programming (Java).</div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;Database Systems (SQL, Oracle, MySQL, PostgreSQL,</div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Microsoft SQL Server, MS Access).</div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;Linux.</div>
     <div> * &nbsp;&nbsp;&nbsp;&nbsp;Web Development (JavaScript, HTML5, CSS, PHP).</div>
     <div> * &nbsp;&nbsp;&nbsp;&nbsp;Technical writing.</div>
-    <div> * &nbsp;&nbsp;&nbsp;&nbsp;Computer Essentials</div>
+    <div> * &nbsp;&nbsp;&nbsp;&nbsp;Computer Essentials.</div>
     <div> */</div>
 </div>
 `;
@@ -238,6 +244,7 @@ githubBtn.addEventListener("click", github);
  * @param item the HTMLElement to be styled.
  */
 function addStyle(item) {
+
     item.style.fontWeight = "bold";
     item.style.borderBottom = "0.3em solid #FEA55F";
 }
@@ -248,6 +255,7 @@ function addStyle(item) {
  * @param item the HTMLElement to be styled.
  */
 function removeStyle(item) {
+
     item.style.fontWeight = "normal";
     item.style.borderBottom = "0.08em solid #1E2D3D";
 }
@@ -256,6 +264,7 @@ function removeStyle(item) {
  * Opens LinkedIn profile in a new tab.
  */
 function linkedin() {
+
     window.open("https://www.linkedin.com/in/alexis-mugisha", "_blank");
 }
 
@@ -263,7 +272,32 @@ function linkedin() {
  * Opens GitHub profile in a new tab.
  */
 function github() {
+
     window.open("https://github.com/CodingAddict1530", "_blank");
+}
+
+/**
+ * Opens a link to the javafx project GitHub repository in a new tab.
+ */
+function javafxProject() {
+
+    window.open("https://github.com/CodingAddict1530/Library_System", "_blank");
+}
+
+/**
+ * Opens a link to the JavaScript project GitHub repository in a new tab.
+ */
+function jsProject() {
+
+    window.open("https://github.com/CodingAddict1530/portfolio", "_blank");
+}
+
+/**
+ * Opens a link to Algonquin College.
+ */
+function college() {
+
+    window.open("https://www.algonquincollege.com/", "_blank");
 }
 
 /**
@@ -288,7 +322,7 @@ function function1() {
         removeStyle(about)
         removeStyle(projects);
         removeStyle(contact);
-    } else if (path.includes("about.html")) { // Check if the current document is about.html.
+    } else if (path.includes("resume.html")) { // Check if the current document is resume.html.
 
         // Style about div and remove style from the rest.
         addStyle(about);
@@ -313,6 +347,47 @@ function function1() {
         removeStyle(about)
         removeStyle(hello);
         removeStyle(contact);
+
+        let slideshows = {};
+        let slideIndex = {};
+        let slideClassNames = {};
+
+        window.startSlideshow = startSlideshow;
+        window.stopSlideshow = stopSlideshow;
+
+        /**
+         * Hide all pictures and display the current one according to the index.
+         *
+         * @param className the class name of the div pictures to be selected.
+         * @param index the position of the current slide.
+         */
+        function showSlides(className, index) {
+            let slides = document.getElementsByClassName(className);
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex[className] = index;
+            if (slideIndex[className] > slides.length) {
+                slideIndex[className] = 1;
+            }
+            slides[slideIndex[className] - 1].style.display = "block";
+        }
+
+        function startSlideshow(className, containerId) {
+            if (!slideshows[containerId]) {
+                slideClassNames[containerId] = className
+                slideIndex[className] = 0;
+                slideshows[containerId] = setInterval(() => {
+                    showSlides(className, ++slideIndex[className]);
+                }, 2000);
+            }
+        }
+
+        function stopSlideshow(containerId) {
+            clearInterval(slideshows[containerId]);
+            slideshows[containerId] = null;
+        }
+
     } else {
 
         // Style contact div and remove style from the rest.
@@ -392,7 +467,7 @@ function helloPage() {
  */
 function aboutPage() {
 
-    window.location.href = "../pages/about.html";
+    window.location.href = "../pages/resume.html";
 }
 
 /**
