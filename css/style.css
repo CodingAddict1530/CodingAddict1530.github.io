@@ -7,26 +7,29 @@
 ::-webkit-scrollbar {
     background: #010C15;
     width: 0.8em;
+    height: 0.8em;
 }
 
 ::-webkit-scrollbar-thumb {
     background: rgba(229, 233, 240, 0.7);
-    border-radius: 15px;
+    border-radius: 0.5em;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: #010C15;
 }
 
 .body-1, .body-2 {
 
     color: #607b96;
-
     display: flex;
     flex-direction: column;
     min-height: 99vh;
     margin: 0;
-
+    height: 99.8vh;
     border: 0.05em solid #1E2D3D;
-    border-radius: 3px;
-
-    font-size: 11px;
+    border-radius: 0.5em;
+    font-size: 0.6875em;
     font-family: 'Fira Code', serif;
 
 }
@@ -56,7 +59,7 @@ header div, footer div {
     text-align: left;
     display: flex;
     align-items: center;
-    padding-left: 15px;
+    padding-left: 1.4em;
     border: 0.05em solid #1E2D3D;
 }
 
@@ -138,31 +141,31 @@ header div, footer div {
 
 .content-left-text-1 {
     flex: 3;
-    font-size: 15px;
+    font-size: 0.9375em;
     color: #E5E9F0;
 }
 
 .content-left-text-2 {
     flex: 3;
-    font-size: 40px;
+    font-size: 3.8em;
     color: #E5E9F0;
 }
 
 .content-left-text-3 {
     flex: 3;
-    font-size: 18px;
+    font-size: 1.7em;
     color: #4D5BCE;
 }
 
 .content-left-text-4 {
     flex: 3;
-    font-size: 10px;
+    font-size: 0.9em;
     color: #607B96;
 }
 
 .content-left-text-5 {
     flex: 3;
-    font-size: 11px;
+    font-size: 0.9em;
 }
 
 .center {
@@ -203,7 +206,7 @@ header div, footer div {
     width: 30em;
     height: auto;
     opacity: 0.9;
-    border-radius: 20px;
+    border-radius: 2em;
 }
 
 .pointer  {
@@ -222,17 +225,25 @@ header div, footer div {
     width: 99.9%;
 }
 
-.about-header, .about-body, .projects-header, .projects-body {
+.about-header, .contact-header {
+    min-height: 1.9em;
+}
+
+.about-body, .contact-body {
+    max-height: 86vh;
+}
+
+.about-header, .about-body, .projects-header, .projects-body, .contact-header, .contact-body {
     display: flex;
     flex-direction: row;
     border: 0.05em solid #1E2D3D;
 }
 
-.about-header div, .about-body > div, .projects-header div, .projects-body > div {
+.about-header div, .about-body > div, .projects-header div, .projects-body > div, .contact-header > div, .contact-body > div {
     text-align: left;
     display: flex;
     align-items: center;
-    padding-left: 15px;
+    padding-left: 1.5em;
     border: 0.05em solid #1E2D3D;
 }
 
@@ -241,7 +252,7 @@ header div, footer div {
     overflow-y: auto;
 }
 
-.personal-info-body1,  .project-body1 {
+.personal-info-body1,  .project-body1, .contact-info-body1 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -249,7 +260,7 @@ header div, footer div {
     padding-top: 1.5em;
 }
 
-.personal-info-body1 div, .project-body1 div {
+.personal-info-body1 div, .project-body1 div, .contact-info-body1 div {
     border: 0;
     padding: 0.6em;
 }
@@ -325,8 +336,8 @@ header div, footer div {
     max-width: 42.5em;
     background: #011001;
     border: 0.2em solid #1E2D3D;
-    border-radius: 15px;
-    padding: 10px;
+    border-radius: 2em;
+    padding: 1em;
     margin-top: 1em;
 }
 
@@ -341,7 +352,7 @@ header div, footer div {
     max-width: 7em;
     text-align: center;
     padding: 0.7em;
-    border-radius: 15px;
+    border-radius: 1.5em;
 }
 
 .language-icon {
@@ -351,7 +362,7 @@ header div, footer div {
 .small {
     font-size: 1.2em;
     padding: 0.7em 0 0;
-    margin: -2px;
+    margin: -0.15em;
 }
 
 .pad {
@@ -369,8 +380,8 @@ header div, footer div {
 .checkmark {
     position: absolute;
     margin-top: 0.5em;
-    height: 12px;
-    width: 12px;
+    height: 1em;
+    width: 1em;
     background-color: transparent;
     border: 0.15em solid #1E2D3D;
 }
@@ -394,12 +405,12 @@ header div, footer div {
 }
 
 .custom-checkbox .checkmark:after {
-    width: 3px;
-    height: 7px;
-    bottom: 3px;
-    left: 3px;
+    width: 0.2em;
+    height: 0.5em;
+    bottom: 0.2em;
+    left: 0.25em;
     border: solid white;
-    border-width: 0 3px 3px 0;
+    border-width: 0 0.2em 0.2em 0;
     transform: rotate(45deg);
 }
 
@@ -423,7 +434,7 @@ header div, footer div {
     min-width: 38em;
     max-width: 38em;
     margin: 2em;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0.3em 0.6em rgba(255, 255, 255, 0.1);
     transition: box-shadow 0.5s ease, transform 0.5s ease;
     border-radius: 15px;
     background-color: #1E2D3D;
@@ -436,12 +447,11 @@ header div, footer div {
 }
 
 .project-header {
-    padding: 1em;
-    padding-left: 3em;
+    padding: 1em 1em 1em 3em;
 }
 
 .project:hover {
-    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0.6em 1em rgba(255, 255, 255, 0.2);
     transform: scale(1.1);
 }
 
@@ -558,7 +568,7 @@ header div, footer div {
     padding: 0.5em;
     text-align: center;
     max-width: 10em;
-    border-radius: 15px;
+    border-radius: 2em;
     background-color: #010C15;
     cursor: pointer;
 }
@@ -582,7 +592,7 @@ header div, footer div {
 .contact-input {
     background-color: #011001;
     border: 0.1em solid #1E2D3D;
-    border-radius: 5px;
+    border-radius: 0.5em;
     margin-top: 0.6em;
     height: 2em;
     color: #607b96;
@@ -599,8 +609,8 @@ header div, footer div {
     background-color: #1C2B3A;
     border: 0.1em solid #1E2D3D;
     color: #fff;
-    font-size: 11px;
-    border-radius: 5px;
+    font-size: 1em;
+    border-radius: 0.5em;
     padding: 0.5em;
 }
 
@@ -618,10 +628,321 @@ header div, footer div {
     border: 0.1em solid #1E2D3D;
     max-width: 70vh;
     min-height: 70vh;
-    border-radius: 15px;
+    border-radius: 2em;
     padding: 1em;
 }
 
 #nameSubmit, #emailSubmit, #messageSubmit {
     white-space: normal;
+}
+
+#contact {
+    border-right: 0;
+}
+
+#bars {
+    border-left: 0;
+}
+
+#contact-bars, #personal-info-show1-span, .hidden, .index-find-me-2 {
+    display: none;
+}
+
+.sidebar {
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    right: -1500px;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../images/Background.png);
+    transition: right 0.9s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar-div, .sidebar-footer {
+    border: 0.05em solid #1E2D3D;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.sidebar-div {
+    padding: 1em;
+}
+
+.fa-xmark {
+    font-size: 2em;
+}
+
+.sidebar-footer {
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-footer > div {
+    border: 0.05em solid #1E2D3D;
+    border-top: 0;
+    height: 34%;
+    padding: 1em 1em 1em 1.7em;
+}
+
+@media (max-width: 600px) {
+    .body-1 {
+        background-position: 0 0, -7em -1em;
+        background-size: cover, cover;
+        height: 99.8vh;
+    }
+
+    header > div, .content-right, footer, .index-find-me-1 {
+        display: none;
+    }
+
+    .index-find-me-2 {
+        display: block;
+    }
+
+    header {
+        min-height: 9vh;
+    }
+
+    #name, #bars {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        font-size: 1.4em;
+    }
+
+    #name {
+        border-right: 0;
+    }
+
+    #bars {
+        border-left: 0;
+    }
+
+    #contact-bars {
+        display: block;
+        padding-right: 0.5em;
+        font-size: 1.4em;
+    }
+
+    .menu-active {
+        right: 0;
+    }
+
+    /*about*/
+
+    .about-body, .contact-body {
+        flex-direction: column;
+        overflow-x: hidden;
+        overflow-y: auto;
+        max-height: 85vh;
+        display: block;
+    }
+
+    .body-2 {
+        max-height: 100vh;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+    .about-header, .contact-header {
+        max-height: 6vh;
+    }
+
+    .about-header > div, #not-show, .projects-header, .contact-header {
+        display: none;
+    }
+
+    .fa-folder-open {
+        display: none !important;
+    }
+
+    #personal-info-show1, #personal-info-show1-span {
+        display: block;
+        padding-top: 0.3em;
+        font-size: 1.1em;
+    }
+
+    .personal-info-body1 {
+        flex-direction: row;
+        align-self: flex-start;
+        justify-content: flex-start;
+        max-height: 5vh;
+        min-height: 5vh;
+        padding: 0;
+        flex: none;
+    }
+
+    .stick {
+        position: sticky;
+        z-index: 10;
+        top: 0;
+        background-color: #010C15;
+    }
+
+    .personal-info-body1 > div {
+        border-right: 0.05em solid #1E2D3D;
+        border-left: 0.05em solid #1E2D3D;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .personal-info-body2, .personal-info-body3 {
+        box-sizing: border-box;
+        overflow-y: hidden;
+        overflow-x: auto;
+        white-space: nowrap;
+        flex: 1;
+    }
+
+    .personal-info-body3 {
+        min-height: 110em;
+    }
+
+    #bio {
+        flex: 0.8;
+    }
+
+    #skills {
+        flex: 1;
+    }
+
+    #workExp, #education {
+        flex: 2;
+    }
+
+    .numbers, .sentences {
+        max-height: 100%;
+        height: auto;
+    }
+
+    .snippet-body {
+        min-width: 45em;
+    }
+
+    .separator {
+        min-width: 47em;
+        margin-right: 2em;
+    }
+
+    .whole-code {
+        flex: 25;
+        min-width: fit-content;
+    }
+
+    .snippet-header {
+        min-width: 37em;
+    }
+
+    /*Projects*/
+
+    .projects-body {
+        flex-direction: column;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .hidden {
+        align-self: flex-start;
+        padding: 0.2em;
+    }
+
+    .dropdown {
+        transition: min-height 0.5s ease;
+        overflow: hidden;
+        max-height: 3em;
+        min-height: 3em;
+    }
+
+    .dropdown.open {
+        max-height: 30em;
+        min-height: 30em;
+    }
+
+    .dropdown-content {
+        display: none;
+        align-self: flex-start;
+        padding: 0.8em;
+        flex-direction: column;
+    }
+
+    .dropdown-button {
+        display: block;
+    }
+
+    .projects-body {
+        flex: 1;
+        align-self: flex-start;
+        justify-self: flex-start;
+        max-height: 90.5vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .projects-body2 {
+        overflow-x: hidden;
+        overflow-y: auto;
+        flex-direction: column;
+        min-height: 81vh;
+    }
+
+    .project {
+        transform: scale(0.7);
+        margin: 0 0 0 1.2em;
+        left: -2em;
+        position: relative;
+    }
+
+    .project:hover {
+        transform: scale(0.75);
+    }
+
+    /*Contact*/
+    .contact-info-body3 {
+        display: none !important;
+    }
+
+    .column {
+        flex-direction: column;
+    }
+
+    .second.open {
+        max-height: 15em;
+        min-height: 15em;
+    }
+
+    .second {
+        transition: min-height 0.3s ease;
+    }
+
+    .contact-body {
+        height: 100%;
+        position: relative;
+        min-height: 90.6vh;
+    }
+
+    .contact-info-body2 {
+        height: 81.5vh;
+        width: 94.1vw !important;
+    }
+
+    .contact-info-body2 > div {
+        padding-left: 13%;
+    }
+
+    .contact-info-body2 > div > input, .contact-info-body2 > div > textarea {
+        width: 80%;
+    }
+
 }

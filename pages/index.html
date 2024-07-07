@@ -18,7 +18,7 @@
 
         <!-- Top Horizontal Bar -->
         <header>
-            <div class="flex-18">
+            <div id="name" class="flex-18">
                 alexis-mugisha
             </div>
             <div id="hello" class="flex-5 hello pointer" onclick="helloPage()">
@@ -36,7 +36,47 @@
             <div id="contact" class="flex-6 contact pointer" onclick="contactPage()">
                 _contact-me
             </div>
+            <div id="bars" class="pointer" onclick="toggleSidebar()">
+                <i id="contact-bars" class="fas fa-bars"></i>
+            </div>
         </header>
+
+        <!-- Sidebar -->
+        <div id="sidebar" class="sidebar">
+            <div class="flex-2 sidebar-div pointer" onclick="toggleSidebar()">
+                <div class="flex-8">alexis-mugisha</div>
+                <div class="flex-1"><i class="fas fa-xmark"></i></div>
+            </div>
+            <div class="flex-2 sidebar-div white pointer" onclick="helloPage()">
+                _hello
+            </div>
+            <div class="flex-2 sidebar-div white pointer" onclick="aboutPage()">
+                _about-me
+            </div>
+            <div class="flex-2 sidebar-div white pointer" onclick="projectsPage()">
+                _projects
+            </div>
+            <div class="flex-2 sidebar-div white pointer" onclick="contactPage()">
+                _contact-me
+            </div>
+            <div class="flex-30 sidebar-div">
+
+            </div>
+            <div class="flex-2 sidebar-footer">
+                <div class="flex-8">
+                    find me on:
+                </div>
+                <div class="flex-1 pointer">
+                    <i class="fab fa-linkedin-in" onclick="linkedin()"></i>
+                </div>
+                <div class="flex-1">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="flex-1 pointer" onclick="github()">
+                    <i class="fab fa-github"></i>
+                </div>
+            </div>
+        </div>
 
         <!-- Main Content -->
         <div id="content-1" class="content-1">
@@ -54,13 +94,14 @@
                     > Software Developer<br>> Full-stack Developer<br>> Mobile Developer
                 </div>
                 <div class="flex-3">
-                    <br><br><br>// I don't code all day! I play outdoor games and study at <br>// <span class="pointer" onclick="college()"><b>Algonquin College</b></span> as well.
+                    <br><br><br>// I don't code all day! <br>// I'm a sportsman and study at <br>// <span class="pointer" onclick="college()"><b>Algonquin College</b></span> as well.
                 </div>
                 <div id="flex-1" class="flex-1">
                     <br><br><br>
                 </div>
                 <div id="content-left-text-4" class="content-left-text-4">
-                    // you can see more about my projects on my GitHub page
+                    <span class="index-find-me-1">// you can see more about my projects on my GitHub page</span>
+                    <span class="index-find-me-2">// find my profile on GitHub</span>
                 </div>
                 <div id="content-left-text-5" class="content-left-text-5">
                     <span class="blue">String</span> <span class="green">githubLink</span> <span class="white">=</span> <span class="red pointer" onclick="github()">"https://github.com/CodingAddict1530/";</span>

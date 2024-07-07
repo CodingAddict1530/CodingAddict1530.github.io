@@ -18,7 +18,7 @@
 
         <!-- Top Horizontal Bar -->
         <header>
-            <div class="flex-18">
+            <div id="name" class="flex-18">
                 alexis-mugisha
             </div>
             <div id="hello" class="flex-5 hello pointer" onclick="helloPage()">
@@ -36,13 +36,53 @@
             <div id="contact" class="flex-6 contact pointer" onclick="contactPage()">
                 _contact-me
             </div>
+            <div id="bars" class="pointer" onclick="toggleSidebar()">
+                <i id="contact-bars" class="fas fa-bars"></i>
+            </div>
         </header>
+
+        <!-- Sidebar -->
+        <div id="sidebar" class="sidebar">
+            <div class="flex-2 sidebar-div pointer" onclick="toggleSidebar()">
+                <div class="flex-8">alexis-mugisha</div>
+                <div class="flex-1"><i class="fas fa-xmark"></i></div>
+            </div>
+            <div class="flex-2 sidebar-div white pointer" onclick="helloPage()">
+                _hello
+            </div>
+            <div class="flex-2 sidebar-div white pointer" onclick="aboutPage()">
+                _about-me
+            </div>
+            <div class="flex-2 sidebar-div white pointer" onclick="projectsPage()">
+                _projects
+            </div>
+            <div class="flex-2 sidebar-div white pointer" onclick="contactPage()">
+                _contact-me
+            </div>
+            <div class="flex-30 sidebar-div">
+
+            </div>
+            <div class="flex-2 sidebar-footer">
+                <div class="flex-8">
+                    find me on:
+                </div>
+                <div class="flex-1 pointer">
+                    <i class="fab fa-linkedin-in" onclick="linkedin()"></i>
+                </div>
+                <div class="flex-1">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="flex-1 pointer" onclick="github()">
+                    <i class="fab fa-github"></i>
+                </div>
+            </div>
+        </div>
 
         <!-- Main Content -->
         <div id="content-2" class="content-2">
 
             <!-- Main Content Header -->
-            <div class="flex-16 about-header">
+            <div class="flex-16 contact-header">
                 <div class="flex-18">
                     contacts
                 </div>
@@ -58,21 +98,24 @@
             </div>
 
             <!-- Main Content Body -->
-            <div class="flex-50 about-body">
+            <div class="flex-50 contact-body">
 
                 <!-- Main Content Body Column 1 -->
-                <div class="flex-18 personal-info-body1">
-                    <div>
-                        <i class="fas fa-envelope red"></i>&nbsp;mugi0023@algonquinlive.com
-                    </div>
-                    <div>
-                        <i class="fas fa-phone green"></i>&nbsp;+1 (343) 630-4295
-                    </div>
-                    <div>
-                        <i class="fab fa-github blue"></i>&nbsp;CodingAddict1530
-                    </div>
-                    <div>
-                        <i class="fab fa-linkedin white"></i>&nbsp;Alexis Mugisha
+                <div class="flex-18 contact-info-body1 dropdown second stick column">
+                    <span class="white hidden pointer dropdown-button"><i class="fas fa-caret-down"></i>&nbsp;contacts</span>
+                    <div class="dropdown-content">
+                        <div class="contact-hide">
+                            <i class="fas fa-envelope red"></i>&nbsp;mugi0023@algonquinlive.com
+                        </div>
+                        <div class="contact-hide">
+                            <i class="fas fa-phone green"></i>&nbsp;+1 (343) 630-4295
+                        </div>
+                        <div class="contact-hide">
+                            <i class="fab fa-github blue"></i>&nbsp;CodingAddict1530
+                        </div>
+                        <div class="contact-hide">
+                            <i class="fab fa-linkedin white"></i>&nbsp;Alexis Mugisha
+                        </div>
                     </div>
                 </div>
 
@@ -89,7 +132,7 @@
                     <div class="message">
                         _message:<br>
                         <textarea id="messageInput" class="contact-input textarea" placeholder="Great Portfolio!"></textarea><br><br>
-                        <button id="reset" type="reset" class="submitBtn">submit-message</button>
+                        <button id="reset" type="reset" class="submitBtn pointer">submit-message</button>
                     </div>
                     
                 </div>

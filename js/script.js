@@ -238,6 +238,32 @@ linkedinBtn.addEventListener("click", linkedin);
 let githubBtn = document.getElementById("github");
 githubBtn.addEventListener("click", github);
 
+function toggleSidebar() {
+    let sidebar = document.getElementById('sidebar');
+    let head = document.getElementById('personal-info-body1');
+    sidebar.classList.toggle('menu-active');
+    head.classList.toggle('stick');
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    const dropdown = document.querySelector('.dropdown');
+    const dropdownButton = document.querySelector('.dropdown-button');
+    const dropdownContent = document.querySelector('.dropdown-content');
+
+    dropdownButton.addEventListener('click', function() {
+        dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+        dropdown.classList.toggle('open');
+    });
+
+    // Close the dropdown if the user clicks outside of it
+    window.addEventListener('click', function(event) {
+        if (!dropdown.contains(event.target)) {
+            dropdownContent.style.display = 'none';
+            dropdown.classList.remove('open');
+        }
+    });
+});
+
 /**
  * Adds a specific style to the provided HTMLElement.
  *
@@ -546,3 +572,5 @@ function filterItems() {
         item.style.display = show ? 'flex' : 'none';
     });
 }
+
+
