@@ -245,19 +245,32 @@ function toggleSidebar() {
     head.classList.toggle('stick');
 }
 
-document.addEventListener('DOMContentLoaded', function() {
+const dropdownContent = document.querySelector('.dropdown-content');
+
+window.addEventListener("resize", function () {
+    let width = window.innerWidth;
+    if (width >= 600) {
+        dropdownContent.classList.add("display-important");
+    } else {
+        dropdownContent.classList.remove("display-important");
+    }
+})
+
+document.addEventListener('DOMContentLoaded', function () {
+
     const dropdown = document.querySelector('.dropdown');
     const dropdownButton = document.querySelector('.dropdown-button');
-    const dropdownContent = document.querySelector('.dropdown-content');
 
-    dropdownButton.addEventListener('click', function() {
+    dropdownButton.addEventListener('click', function () {
         dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
         dropdown.classList.toggle('open');
     });
 
     // Close the dropdown if the user clicks outside of it
-    window.addEventListener('click', function(event) {
-        if (!dropdown.contains(event.target)) {
+    window.addEventListener('click', function (event) {
+
+        let width = window.innerWidth;
+        if (!dropdown.contains(event.target) && width < 600) {
             dropdownContent.style.display = 'none';
             dropdown.classList.remove('open');
         }

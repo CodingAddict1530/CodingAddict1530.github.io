@@ -692,6 +692,10 @@ header div, footer div {
     padding: 1em 1em 1em 1.7em;
 }
 
+.display-important {
+    display: block !important;
+}
+
 @media (max-width: 600px) {
     .body-1 {
         background-position: 0 0, -7em -1em;
