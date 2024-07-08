@@ -36,8 +36,8 @@
             <div id="contact" class="flex-6 contact pointer" onclick="contactPage()">
                 _contact-me
             </div>
-            <div id="bars" class="pointer" onclick="toggleSidebar()">
-                <i id="contact-bars" class="fas fa-bars"></i>
+            <div id="menu-bars-div" class="pointer" onclick="toggleSidebar()">
+                <i id="menu-bars" class="fas fa-bars"></i>
             </div>
         </header>
 
@@ -82,9 +82,9 @@
         <div id="content-2" class="content-2">
 
             <!-- Main Content Header -->
-            <div class="flex-16 about-header">
-                <div id="personal-info-show1" class="flex-18">
-                    <span id="not-show">personal-info</span><span id="personal-info-show1-span" class="white">_about-me</span>
+            <div class="flex-16 resume-header">
+                <div id="resume-show" class="flex-18">
+                    <span id="resume-not-show">personal-info</span><span id="personal-info-show1-span" class="white">_about-me</span>
                 </div>
                 <div class="flex-16">
                     personal-info
@@ -98,10 +98,10 @@
             </div>
 
             <!-- Main Content Body -->
-            <div class="flex-50 about-body">
+            <div class="flex-50 resume-body">
 
                 <!-- Main Content Body Column 1 -->
-                <div id="personal-info-body1" class="flex-18 personal-info-body1 stick">
+                <div id="resume-body1" class="flex-18 resume-body1 stick">
                     <div id="bio" class="pointer">
                         <i class="fas fa-folder-open red"></i>&nbsp;bio
                     </div>
@@ -117,12 +117,12 @@
                 </div>
 
                 <!-- Main Content Body Column 2 -->
-                <div id="personal-info-body2" class="flex-37-4 scrollable personal-info-body2"c>
+                <div id="resume-body2" class="flex-37-4 scrollable resume-body2">
                     
                 </div>
 
                 <!-- Main Content Body Column 3 -->
-                <div class="flex-38-6 scrollable personal-info-body3">
+                <div class="flex-38-6 scrollable resume-body3">
                     <div class="snippet-comment">// Code snippet showcase:</div>
                     <div class="snippet">
                         <div class="flex-1 snippet-header">
@@ -134,7 +134,7 @@
                             <div class="flex-18">
 
                             </div>
-                            <div class="flex-18 white whole-code pointer" onclick="javafxProject()">
+                            <div class="flex-18 white view-project pointer" onclick="javafxProject()">
                                 View Project
                             </div>
                         </div>
@@ -168,7 +168,7 @@
                             <div class="flex-18">
 
                             </div>
-                            <div class="flex-18 white whole-code">
+                            <div class="flex-18 white view-project">
                                 Project Unavailable
                             </div>
                         </div>
@@ -203,7 +203,7 @@
                             <div class="flex-18">
 
                             </div>
-                            <div class="flex-18 white whole-code pointer" onclick="jsProject()">
+                            <div class="flex-18 white view-project pointer" onclick="jsProject()">
                                 View Project
                             </div>
                         </div>
