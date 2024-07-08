@@ -245,8 +245,13 @@ function toggleSidebar() {
 
     let sidebar = document.getElementById('sidebar');
     let head = document.getElementById('resume-body1');
+
     sidebar.classList.toggle('menu-active');
-    head.classList.toggle('stick');
+    try {
+        head.classList.toggle('stick');
+    } catch (error) {
+        console.log(error);
+    }
 }
 
 // Get the dropdown content div.
@@ -274,15 +279,19 @@ document.addEventListener('DOMContentLoaded', function () {
     const dropdownButton = document.querySelector('.dropdown-button');
 
     // Add an event listener for when dropdownButton is clicked.
-    dropdownButton.addEventListener('click', function () {
+    try {
+        dropdownButton.addEventListener('click', function () {
 
-        // Check whether display is block now and change it accordingly.
-        dropdownContent.style.display = (dropdownContent.style.display === 'block') ? 'none' : 'block';
+            // Check whether display is block now and change it accordingly.
+            dropdownContent.style.display = (dropdownContent.style.display === 'block') ? 'none' : 'block';
 
-        // Add class "open" to dropdown or else remove it.
-        dropdown.classList.toggle('open');
+            // Add class "open" to dropdown or else remove it.
+            dropdown.classList.toggle('open');
 
-    });
+        });
+    } catch (error) {
+        console.log(error);
+    }
 
     // Add an event listener to the window
     window.addEventListener('click', function (event) {
@@ -291,11 +300,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Check whether the area clicked is not part of the dropdown and the screen width
         // is less than 600.
-        if (!dropdown.contains(event.target) && width < 600) {
+        try {
+            if (!dropdown.contains(event.target) && width < 600) {
 
-            // Hide the dropdown and remove class "open" from the dropdown.
-            dropdownContent.style.display = 'none';
-            dropdown.classList.remove('open');
+                // Hide the dropdown and remove class "open" from the dropdown.
+                dropdownContent.style.display = 'none';
+                dropdown.classList.remove('open');
+            }
+        } catch (error) {
+            console.log(error);
         }
 
     });
@@ -555,7 +568,7 @@ function contactPage() {
  */
 function loadBio() {
 
-    document.getElementById("personal-info-body2").innerHTML = bioData;
+    document.getElementById("resume-body2").innerHTML = bioData;
 }
 
 /**
@@ -563,7 +576,7 @@ function loadBio() {
  */
 function loadWorkExp() {
 
-    document.getElementById("personal-info-body2").innerHTML = workExpData;
+    document.getElementById("resume-body2").innerHTML = workExpData;
 }
 
 /**
@@ -571,7 +584,7 @@ function loadWorkExp() {
  */
 function loadSkills() {
 
-    document.getElementById("personal-info-body2").innerHTML = skillsData;
+    document.getElementById("resume-body2").innerHTML = skillsData;
 }
 
 /**
@@ -579,7 +592,7 @@ function loadSkills() {
  */
 function loadEducation() {
 
-    document.getElementById("personal-info-body2").innerHTML = educationData;
+    document.getElementById("resume-body2").innerHTML = educationData;
 }
 
 /**
