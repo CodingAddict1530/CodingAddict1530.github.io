@@ -238,43 +238,68 @@ linkedinBtn.addEventListener("click", linkedin);
 let githubBtn = document.getElementById("github");
 githubBtn.addEventListener("click", github);
 
+/**
+ * Displays or removes the sidebar.
+ */
 function toggleSidebar() {
+
     let sidebar = document.getElementById('sidebar');
-    let head = document.getElementById('personal-info-body1');
+    let head = document.getElementById('resume-body1');
     sidebar.classList.toggle('menu-active');
     head.classList.toggle('stick');
 }
 
+// Get the dropdown content div.
 const dropdownContent = document.querySelector('.dropdown-content');
 
+// Add an event listener for when the window is resized
 window.addEventListener("resize", function () {
+
+    // Get the new window size.
     let width = window.innerWidth;
+
+    // If more or equal to 600, add the class "display-important" to dropdownContent.
     if (width >= 600) {
         dropdownContent.classList.add("display-important");
     } else {
         dropdownContent.classList.remove("display-important");
     }
+
 })
 
+// Add an event listener for when the document has fully loaded.
 document.addEventListener('DOMContentLoaded', function () {
 
     const dropdown = document.querySelector('.dropdown');
     const dropdownButton = document.querySelector('.dropdown-button');
 
+    // Add an event listener for when dropdownButton is clicked.
     dropdownButton.addEventListener('click', function () {
-        dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+
+        // Check whether display is block now and change it accordingly.
+        dropdownContent.style.display = (dropdownContent.style.display === 'block') ? 'none' : 'block';
+
+        // Add class "open" to dropdown or else remove it.
         dropdown.classList.toggle('open');
+
     });
 
-    // Close the dropdown if the user clicks outside of it
+    // Add an event listener to the window
     window.addEventListener('click', function (event) {
 
         let width = window.innerWidth;
+
+        // Check whether the area clicked is not part of the dropdown and the screen width
+        // is less than 600.
         if (!dropdown.contains(event.target) && width < 600) {
+
+            // Hide the dropdown and remove class "open" from the dropdown.
             dropdownContent.style.display = 'none';
             dropdown.classList.remove('open');
         }
+
     });
+
 });
 
 /**
@@ -585,5 +610,3 @@ function filterItems() {
         item.style.display = show ? 'flex' : 'none';
     });
 }
-
-
