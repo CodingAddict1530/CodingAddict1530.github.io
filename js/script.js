@@ -589,7 +589,7 @@ function function1() {
  */
 function helloPage() {
 
-    window.location.href = "../pages/index.html";
+    window.location.href = "../docs/index.html";
 }
 
 /**
@@ -597,7 +597,7 @@ function helloPage() {
  */
 function aboutPage() {
 
-    window.location.href = "../pages/resume.html";
+    window.location.href = "../docs/resume.html";
 }
 
 /**
@@ -605,7 +605,7 @@ function aboutPage() {
  */
 function projectsPage() {
 
-    window.location.href = "../pages/projects.html";
+    window.location.href = "../docs/projects.html";
 }
 
 /**
@@ -613,7 +613,7 @@ function projectsPage() {
  */
 function contactPage() {
 
-    window.location.href = "../pages/contact.html";
+    window.location.href = "../docs/contact.html";
 }
 
 /**
