@@ -167,7 +167,15 @@
                 </div>
 
                 <!-- Main Content Body Column 2 -->
-                <div class="flex-50 scrollable projects-body2">
+                <div id="projects-body2" class="flex-50 scrollable projects-body2">
+                    <div class="change-project">
+                        <div id="previous" class="pointer" onclick="previous('left')">
+                            Previous
+                        </div>
+                        <div id="next" class="pointer" onclick="next('left')">
+                            Next
+                        </div>
+                    </div>
                     <div id="project1" class="project flex-1 java javafx" onmouseenter="startSlideshow('project1', 'project1')" onmouseleave="stopSlideshow('project1')">
                         <div class="project-header">
                             <span class="blue"><b>Project 1</b></span> <b>// _library-system</b> (still receives updates)

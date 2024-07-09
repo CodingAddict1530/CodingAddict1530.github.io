@@ -1,9 +1,12 @@
+
+/* Define the font being used. */
 @font-face {
     font-family: 'Fira Code';
     src: url('../fonts/FiraCode-Regular.ttf') format('truetype');
     
 }
 
+/*  */
 ::-webkit-scrollbar {
     background: #010C15;
     width: 0.8em;
@@ -34,6 +37,7 @@
 
 }
 
+/*  */
 .body-1 {
     background-image: 
         url(../images/Background.png),
@@ -157,6 +161,7 @@ header div, footer div {
     color: #4D5BCE;
 }
 
+/*  */
 .content-left-text-4 {
     flex: 3;
     font-size: 0.9em;
@@ -440,6 +445,30 @@ header div, footer div {
     background-color: #1E2D3D;
 }
 
+.change-project {
+    display: flex;
+    flex-direction: row;
+    max-width: 18vw;
+    position: absolute;
+    top: 9vh;
+    left: 48%;
+}
+
+.change-project > div {
+    border: 0.05em solid #1E2D3D;
+    margin: 0.8em;
+    padding: 0.7em;
+    text-align: center;
+    background-color: #1E2D3D;
+    border-radius: 2em;
+    transition: box-shadow 0.5s ease, transform 0.5s ease;
+}
+
+.change-project > div:hover {
+    box-shadow: 0 0.4em 0.6em rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
+
 .project-body {
     margin-top: 1em;
     padding: 0;
@@ -648,6 +677,7 @@ header div, footer div {
     display: none;
 }
 
+/*  */
 .sidebar {
     position: fixed;
     z-index: 20;

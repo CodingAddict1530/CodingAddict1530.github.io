@@ -238,6 +238,59 @@ linkedinBtn.addEventListener("click", linkedin);
 let githubBtn = document.getElementById("github");
 githubBtn.addEventListener("click", github);
 
+// Get the div containing projects.
+const projectBody = document.getElementById("projects-body2");
+
+/**
+ * Scroll the projects div a certain amount forward.
+ *
+ * @param direction the direction of the scroll. (left = horizontal, top = vertical).
+ */
+function next(direction) {
+    projectBody.scrollBy({
+        left: 420,
+        behavior: "smooth"
+    })
+}
+
+/**
+ * Scroll the projects div a certain amount backwards.
+ *
+ * @param direction the direction of the scroll. (left = horizontal, top = vertical).
+ */
+function previous(direction) {
+    projectBody.scrollBy({
+        left: -420,
+        behavior: "smooth"
+    })
+}
+
+/**
+ * Add an event listener for key presses.
+ */
+document.addEventListener("keydown", function(event) {
+
+    // Get window width.
+    let width = window.innerWidth;
+
+    // Check whether the width is more than or equal to 600.
+    if (width >= 600) {
+        if (event.key === "ArrowLeft") {
+            previous("left");
+        } else if (event.key === "ArrowRight") {
+            next("left");
+        }
+    } else {
+        if (event.key === "ArrowUp") {
+            previous("top");
+        } else if (event.key === "ArrowDown") {
+            next("top");
+        }
+    }
+
+
+})
+
 /**
  * Displays or removes the sidebar.
  */
